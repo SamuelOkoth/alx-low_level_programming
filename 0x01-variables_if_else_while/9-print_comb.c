@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - prints all possible combinations of base-10 digits
  *
- * Return: Always 0 (Success)
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-	int d;
+	int digit;
 
-	for (d = '0'; d <= '9'; d++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		putchar(d);
-		if (d != '9')
+		putchar(digit);
+		if (digit != '9')
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }

@@ -1,25 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - prints the base-16 digits
  *
- * Return: Always 0 (Success)
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-	int d;
-	char low;
+	char digit;
 
-	for (d = '0'; d <= '9'; d++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		putchar(d);
+		putchar(digit);
 	}
-	for (low = 'a'; low <= 'f'; low++)
+	for (digit = 'a'; digit <= 'f'; digit++)
 	{
-		putchar(low);
+		putchar(digit);
 	}
-		putchar('\n');
 
+	putchar('\n');
 	return (0);
 }

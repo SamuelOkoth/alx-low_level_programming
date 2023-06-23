@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - prints the lowercase English alphabet in reverse
  *
- * Return: Always 0 (Success)
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-	char low;
+	char letter;
 
-	for (low = 'z'; low >= 'a'; low--)
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
-		putchar(low);
+		putchar(letter);
 	}
-		putchar('\n');
 
+	putchar('\n');
 	return (0);
 }

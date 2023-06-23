@@ -1,28 +1,33 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - prints all possible different combinations of two base-10 digits
  *
- * Return: Always 0 (Success)
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-	int d;
+	int digit1;
+	int digit2;
 
-	for (d = 0; d < 90; d++)
+	for (digit1 = 0x30; digit1 <= 0x39; digit1++)
 	{
-		for ()
+		for (digit2 = 0x30; digit2 <= 0x39; digit2++)
 		{
-			putchar((d / 10) + '0');
-			putchar((d % 10) + '0');
-		}
-		if (d != 89)
-		{
-			putchar(',');
-			putchar(' ');
+			if (digit1 < digit2)
+			{
+				putchar(digit1);
+				putchar(digit2);
+
+				if ((digit1 >= 0x30 && digit1 < 0x38) && digit2 <= 0x39)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }

@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - prints all base 10 digits
  *
- * Return: Always 0 (Success)
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-	int i;
+	char digit;
 
-	for (i = 0; i < 10; i++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		printf("%d", i);
+		putchar(digit);
 	}
-		printf("\n");
 
+	putchar('\n');
 	return (0);
 }
