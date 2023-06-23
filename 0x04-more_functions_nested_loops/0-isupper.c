@@ -6,9 +6,17 @@
  * Return: 1 if c is uppercase, 0 otherwise
  */
 #include "main.h"
+#include <stdio.h>
+#include <ctype.h>
 
-int _isupper(int c)
+int main(void)
 {
-    return (c >= 'A' && c <= 'Z') ? 1 : 0;
+    char c;
+
+    c = 'A';
+    printf("%c: %d\n", c, _isupper(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isupper(c));
+    return 0;
 }
 
